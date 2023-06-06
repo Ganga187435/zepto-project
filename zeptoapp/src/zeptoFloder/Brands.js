@@ -24,7 +24,7 @@ function Brands() {
     {
 Brandsinfocus.map((x) => {
 return (
-<img src={x.imagePath} alt="vegetables" />
+<img key={x.id} src={x.imagePath} alt="vegetables" />
 )
 })
     }

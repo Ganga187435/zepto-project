@@ -141,14 +141,14 @@ const data= [
     button:"15% off"
     },
     {
-    id:"1",
+    id:"21",
     imagePath:"https://cdn.zeptonow.com/production///tr:w-450,ar-753-751,pr-true,f-webp,q-80/inventory/product/34acb521-e273-4d64-a36d-f152a00eae85-1aGt_uve91NudvXff0KmkxcfpdXSQwHV9.jpeg",
     name:"Disano Pastalicious Elbows" ,
     price:"₹90",
     button:"15% off"
     },
     {
-    id:"1",
+    id:"22",
     imagePath:"https://cdn.zeptonow.com/production///tr:w-450,ar-753-751,pr-true,f-webp,q-80/inventory/product/34acb521-e273-4d64-a36d-f152a00eae85-1aGt_uve91NudvXff0KmkxcfpdXSQwHV9.jpeg",
     name:"Disano Pastalicious Elbows" ,
     price:"₹90",
@@ -164,7 +164,7 @@ function NoodlesandPasta() {
           {
     data.map((x) => {
       return (
-        <div>
+        <div key={x.id}>
       <img src={x.imagePath} alt="Noodles and pasta"  />
       <h2>{x.name}</h2>
       <h3>{x.price}</h3>

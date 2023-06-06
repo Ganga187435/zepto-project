@@ -149,7 +149,7 @@ right arrow
     <img src={data[5].imagePath} alt='vegetable' />
      */}
     {data.map((x) => {
-      return <img src={x.imagePath} alt="vegetables" />;
+      return <img key={x.id} src={x.imagePath} alt="vegetables" />;
       
      })}
     

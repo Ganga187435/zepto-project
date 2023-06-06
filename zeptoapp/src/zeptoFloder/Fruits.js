@@ -63,7 +63,7 @@ function Fruits() {
           {
      Fruitsforyoursoul.map((x) => {
       return (
-        <div>
+        <div key={x.id}>
       <img src={x.imagePath} alt="vegetables"  />
       <h2>{x.name}</h2>
       <h3>{x.price}</h3>
