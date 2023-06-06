@@ -89,11 +89,11 @@ const data= [
     imagePath:"https://cdn.zeptonow.com/production///tr:w-200,ar-500-500,pr-true,f-webp,q-80/inventory/product/9ea9610f-6d11-4320-8977-625969c0385d-b6c6fb77-3423-494f-b916-66e9becab505-image_file.png"
     },
     {
-    id:"1",
+    id:"23",
     imagePath:"https://cdn.zeptonow.com/production///tr:w-200,ar-225-225,pr-true,f-webp,q-80/inventory/product/ee12cb22-b49f-4c47-a05a-894dd180c5f1-Photo.jpeg"
     },
     {
-    id:"1",
+    id:"24",
     imagePath:"https://cdn.zeptonow.com/production///tr:w-200,ar-225-225,pr-true,f-webp,q-80/inventory/product/ee12cb22-b49f-4c47-a05a-894dd180c5f1-Photo.jpeg"
     },
 ]
@@ -101,7 +101,7 @@ function Fruitsandveg() {
   return (
     <div>
        {data.map((x) => {
-      return <img src={x.imagePath} alt="vegetables" />;
+      return <img key={x.id} src={x.imagePath} alt="vegetables" />;
       
      })}
     </div>

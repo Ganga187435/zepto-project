@@ -1,6 +1,6 @@
 import './App.css';
 import Fruitsandveg from './FruitsandVegetables/Fruitsandveg';
-import Navbar from './NavBar/Navbar';
+import NoodlesandPasta from './NoodlesandPasta/NoodlesandPasta';
 import Brands from './zeptoFloder/Brands';
 import Explorenewcategories from './zeptoFloder/Explorenewcategories';
 import Fruits from './zeptoFloder/Fruits';
@@ -119,6 +119,7 @@ const data= [
 function App() {
   return (
    <div>
+
      {/* <main>
      
       <nav class="navbar"><h1>Zepto</h1>
@@ -147,25 +148,38 @@ right arrow
     <img src={data[4].imagePath} alt='vegetable' />
     <img src={data[5].imagePath} alt='vegetable' />
      */}
-
-     {data.map((x) => {
-      return <img src={x.imagePath} alt="vegetables" />;
+    {data.map((x) => {
+      return <img key={x.id} src={x.imagePath} alt="vegetables" />;
       
      })}
+    
     
      <Explorenewcategories></Explorenewcategories>
      <Fruits ></Fruits>
      <Brands></Brands>
      <Fruitsandveg></Fruitsandveg>
+     <NoodlesandPasta></NoodlesandPasta>
+{/* <BrowserRouter>
+        <Navbar /> */}
+        {/* <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/fruits&veg" element={<FruitsAndVeg />}></Route>
+        </Routes> */}
+      {/* // </BrowserRouter> */}
+
+
+
+
+
      {/* <BrowserRouter>
      <Router>
       <Router path="/" exactComponent={Location}/>
      </Router>
      </BrowserRouter> */}
-     <Navbar></Navbar>
+    {/* //  <Navbar></Navbar> */}
      {/* <Header></Header> */}
      
-   </div>
+  </div>
   
   );
 }
